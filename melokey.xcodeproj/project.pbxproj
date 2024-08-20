@@ -14,6 +14,9 @@
 		161F480F2C51A0DC007D6794 /* melokeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F480E2C51A0DC007D6794 /* melokeyTests.swift */; };
 		161F48192C51A0DC007D6794 /* melokeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F48182C51A0DC007D6794 /* melokeyUITests.swift */; };
 		161F481B2C51A0DC007D6794 /* melokeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F481A2C51A0DC007D6794 /* melokeyUITestsLaunchTests.swift */; };
+		1629CEDF2C7518FC00AF4EBE /* Gazpacho Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEDE2C7518FB00AF4EBE /* Gazpacho Black.ttf */; };
+		1629CEE12C75194900AF4EBE /* Gazpacho Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */; };
+		1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629CEE32C751FD500AF4EBE /* FontStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		161F48142C51A0DC007D6794 /* melokeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = melokeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		161F48182C51A0DC007D6794 /* melokeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melokeyUITests.swift; sourceTree = "<group>"; };
 		161F481A2C51A0DC007D6794 /* melokeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = melokeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1629CEDE2C7518FB00AF4EBE /* Gazpacho Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gazpacho Black.ttf"; sourceTree = "<group>"; };
+		1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gazpacho Regular.ttf"; sourceTree = "<group>"; };
+		1629CEE22C751F5800AF4EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1629CEE32C751FD500AF4EBE /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,13 @@
 		161F47FC2C51A0D8007D6794 /* melokey */ = {
 			isa = PBXGroup;
 			children = (
+				1629CEE22C751F5800AF4EBE /* Info.plist */,
+				1629CED92C75187400AF4EBE /* Fonts */,
 				161F47FD2C51A0D8007D6794 /* melokeyApp.swift */,
 				161F47FF2C51A0D8007D6794 /* ContentView.swift */,
 				161F48012C51A0DB007D6794 /* Assets.xcassets */,
 				161F48032C51A0DB007D6794 /* Preview Content */,
+				1629CEE32C751FD500AF4EBE /* FontStyles.swift */,
 			);
 			path = melokey;
 			sourceTree = "<group>";
@@ -125,6 +135,15 @@
 				161F481A2C51A0DC007D6794 /* melokeyUITestsLaunchTests.swift */,
 			);
 			path = melokeyUITests;
+			sourceTree = "<group>";
+		};
+		1629CED92C75187400AF4EBE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */,
+				1629CEDE2C7518FB00AF4EBE /* Gazpacho Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				161F48052C51A0DB007D6794 /* Preview Assets.xcassets in Resources */,
+				1629CEDF2C7518FC00AF4EBE /* Gazpacho Black.ttf in Resources */,
 				161F48022C51A0DB007D6794 /* Assets.xcassets in Resources */,
+				1629CEE12C75194900AF4EBE /* Gazpacho Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +280,7 @@
 			files = (
 				161F48002C51A0D8007D6794 /* ContentView.swift in Sources */,
 				161F47FE2C51A0D8007D6794 /* melokeyApp.swift in Sources */,
+				1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +446,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"melokey/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = melokey/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +475,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"melokey/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = melokey/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
