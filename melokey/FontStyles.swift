@@ -10,18 +10,18 @@ import SwiftUI
 
 extension Font {
     static var MainTitle: Font {
-        return Font.custom("Gazpacho Regular", size: 175)
+        return Font.custom("Gazpacho-Black", size: 175)
     }
     
     static var Dates: Font {
-        return Font.custom("Gazpacho Regular", size: 16)
+        return Font.custom("Gazpacho-Black", size: 16)
     }
     
     static var Settings: Font {
-        return Font.custom("Gazpacho Regular", size: 20)
+        return Font.custom("Gazpacho-Black", size: 20)
     }
     
     static var Main: Font {
-        return Font.custom("Gazpacho Regular", size: 32)
+        return Font.custom("Gazpacho-Black", size: 32)
     }
 }
