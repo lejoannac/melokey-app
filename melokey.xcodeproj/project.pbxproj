@@ -17,6 +17,8 @@
 		1629CEDF2C7518FC00AF4EBE /* Gazpacho Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEDE2C7518FB00AF4EBE /* Gazpacho Black.ttf */; };
 		1629CEE12C75194900AF4EBE /* Gazpacho Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */; };
 		1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629CEE32C751FD500AF4EBE /* FontStyles.swift */; };
+		1629CEE62C76510200AF4EBE /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629CEE52C76510200AF4EBE /* MainMenu.swift */; };
+		1629CEE82C76562D00AF4EBE /* March Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEE72C76562D00AF4EBE /* March Clean.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gazpacho Regular.ttf"; sourceTree = "<group>"; };
 		1629CEE22C751F5800AF4EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1629CEE32C751FD500AF4EBE /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		1629CEE52C76510200AF4EBE /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		1629CEE72C76562D00AF4EBE /* March Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "March Clean.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				161F48012C51A0DB007D6794 /* Assets.xcassets */,
 				161F48032C51A0DB007D6794 /* Preview Content */,
 				1629CEE32C751FD500AF4EBE /* FontStyles.swift */,
+				1629CEE52C76510200AF4EBE /* MainMenu.swift */,
 			);
 			path = melokey;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			children = (
 				1629CEE02C75194900AF4EBE /* Gazpacho Regular.ttf */,
 				1629CEDE2C7518FB00AF4EBE /* Gazpacho Black.ttf */,
+				1629CEE72C76562D00AF4EBE /* March Clean.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				161F48052C51A0DB007D6794 /* Preview Assets.xcassets in Resources */,
+				1629CEE82C76562D00AF4EBE /* March Clean.ttf in Resources */,
 				1629CEDF2C7518FC00AF4EBE /* Gazpacho Black.ttf in Resources */,
 				161F48022C51A0DB007D6794 /* Assets.xcassets in Resources */,
 				1629CEE12C75194900AF4EBE /* Gazpacho Regular.ttf in Resources */,
@@ -281,6 +288,7 @@
 				161F48002C51A0D8007D6794 /* ContentView.swift in Sources */,
 				161F47FE2C51A0D8007D6794 /* melokeyApp.swift in Sources */,
 				1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */,
+				1629CEE62C76510200AF4EBE /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,8 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,8 +486,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
