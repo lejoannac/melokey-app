@@ -1,49 +1,67 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var masterVolume: Float = 50.0
+    @State private var metronomeVolume: Float = 50.0
     @State private var soundFXVolume: Float = 50.0
-    
+
     var body: some View {
         ZStack {
-            VStack(spacing: 20) {
+            VStack(spacing: 75) {
                 Text("settings.")
                     .font(Font.custom("Gazpacho", size: 64).weight(.black))
                     .foregroundColor(.black)
-                
+
                 VStack(spacing: 40) {
-           
+                
+                    HStack {
+                        Text("Master Volume")
+                            .frame(width: 230, alignment: .leading)
+                        Slider(value: $masterVolume, in: 0...100, step: 1)
+                            .accentColor(.gray)
+                            .frame(width: 200)
+
+                        Text("\(Int(masterVolume))")
+                            .font(Font.custom("Gazpacho", size: 20).weight(.black))
+                            .foregroundColor(.black)
+                            .frame(width: 50, alignment: .leading)
+                    }
+
+                    HStack {
+                        Text("Metronome Volume")
+                            .frame(width: 230, alignment: .leading)
+                        Slider(value: $metronomeVolume, in: 0...100, step: 1)
+                            .accentColor(.gray)
+                            .frame(width: 200)
+
+                        Text("\(Int(metronomeVolume))")
+                            .font(Font.custom("Gazpacho", size: 20).weight(.black))
+                            .foregroundColor(.black)
+                            .frame(width: 50, alignment: .leading)
+                    }
+
                     HStack {
                         Text("Sound FX Volume")
-                            .frame(width: 200, alignment: .leading)
+                            .frame(width: 230, alignment: .leading)
                         Slider(value: $soundFXVolume, in: 0...100, step: 1)
                             .accentColor(.gray)
                             .frame(width: 200)
-                        
+
                         Text("\(Int(soundFXVolume))")
                             .font(Font.custom("Gazpacho", size: 20).weight(.black))
                             .foregroundColor(.black)
                             .frame(width: 50, alignment: .leading)
                     }
-                    
-                    Text("Metronome Volume")
-                    Text("Master Volume")
                 }
                 .font(Font.custom("Gazpacho", size: 20).weight(.black))
                 .foregroundColor(.black)
-                
-                HStack(spacing: 20) {
-                    Text("Master Volume")
-                    Slider(value: .constant(0.5))
-                        .frame(width: 200)
-                }
-                .padding()
-                .background(Color(red: 0.91, green: 0.87, blue: 0.97))
-                .cornerRadius(16)
-                
+
                 HStack(spacing: 20) {
                     Text("Dark Mode")
+                        .frame(width: 230, alignment: .leading)
                     Toggle("", isOn: .constant(true))
                         .labelsHidden()
+                        .frame(width: 50, alignment: .leading)
                 }
                 .padding()
                 .background(Color(red: 0.90, green: 0.88, blue: 0.91))
