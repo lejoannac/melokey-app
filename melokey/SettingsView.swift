@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var soundFXVolume: Float = 50.0
+    
     var body: some View {
         ZStack {
             VStack(spacing: 20) {
@@ -9,8 +11,20 @@ struct SettingsView: View {
                     .foregroundColor(.black)
                 
                 VStack(spacing: 40) {
-                    Text("Dark Mode")
-                    Text("Sound FX Volume")
+           
+                    HStack {
+                        Text("Sound FX Volume")
+                            .frame(width: 200, alignment: .leading)
+                        Slider(value: $soundFXVolume, in: 0...100, step: 1)
+                            .accentColor(.gray)
+                            .frame(width: 200)
+                        
+                        Text("\(Int(soundFXVolume))")
+                            .font(Font.custom("Gazpacho", size: 20).weight(.black))
+                            .foregroundColor(.black)
+                            .frame(width: 50, alignment: .leading)
+                    }
+                    
                     Text("Metronome Volume")
                     Text("Master Volume")
                 }
@@ -25,7 +39,7 @@ struct SettingsView: View {
                 .padding()
                 .background(Color(red: 0.91, green: 0.87, blue: 0.97))
                 .cornerRadius(16)
-  =
+                
                 HStack(spacing: 20) {
                     Text("Dark Mode")
                     Toggle("", isOn: .constant(true))
@@ -41,7 +55,6 @@ struct SettingsView: View {
                 .padding(.top, 20)
             }
             .padding()
-            .rotationEffect(.degrees(0))
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4)
         }
     }
