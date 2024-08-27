@@ -8,8 +8,13 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
+          
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.gray.opacity(0.2))
+                .frame(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.height * 0.75)
+                .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
+            
             VStack(spacing: 75) {
-        
                 HStack {
                     ZStack {
                         HStack {
@@ -22,7 +27,8 @@ struct SettingsView: View {
                             }
                             Spacer()
                         }
-                        .padding(.leading, 20)
+                        .padding(.leading, 50)
+                        .padding(.top, -200)
                         
                         Text("settings.")
                             .font(Font.custom("Gazpacho", size: 64).weight(.black))
