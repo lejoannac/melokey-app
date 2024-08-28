@@ -6,7 +6,7 @@ struct ContentView: View {
             ZStack {
                 Color(red: 0.91, green: 0.93, blue: 0.96)
                     .edgesIgnoringSafeArea(.all)
-                
+
                 VStack(spacing: 50) {
                     Text("melokey")
                         .font(Font.custom("March", size: 175))
@@ -26,7 +26,7 @@ struct ContentView: View {
                             .inset(by: 0.5)
                             .stroke(.black, lineWidth: 0.5)
                     )
-                    
+
                     VStack(spacing: 10) {
                         Text("My projects")
                             .font(Font.custom("Gazpacho", size: 36).weight(.black))
@@ -41,7 +41,7 @@ struct ContentView: View {
                             .inset(by: 0.5)
                             .stroke(.black, lineWidth: 0.5)
                     )
-                    
+
                     NavigationLink(destination: SettingsView()) {
                         IconSettings(size: "48")
                     }

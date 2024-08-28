@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.presentationMode) var presentationMode
     @State private var masterVolume: Float = 50.0
     @State private var metronomeVolume: Float = 50.0
     @State private var soundFXVolume: Float = 50.0
@@ -9,27 +10,31 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.clear.edgesIgnoringSafeArea(.all)
-                
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.gray.opacity(0.2))
-                    .frame(width: 500, height: 400) // Fixed size for consistent layout
-                
-                VStack(spacing: 75) {
+                Color(red: 0.91, green: 0.93, blue: 0.96)
+                    .edgesIgnoringSafeArea(.all)
+
+                VStack {
                     HStack {
-                        NavigationLink(destination: ContentView()) {
+                        Button(action: {
+                            // Dismiss the current view to go back
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {
                             Image("Union")
                                 .font(.system(size: 24))
                                 .foregroundColor(.black)
                         }
                         Spacer()
-                        Text("settings.")
-                            .font(Font.custom("Gazpacho", size: 64).weight(.black))
-                            .foregroundColor(.black)
                     }
                     .padding(.horizontal, 50)
                     
-                    VStack(spacing: 40) {
+                    Spacer() // Spacer above the white square
+                    
+                    VStack(spacing: 50) {
+                        Text("settings.")
+                            .font(Font.custom("Gazpacho", size: 64).weight(.black))
+                            .foregroundColor(.black)
+                            .frame(maxWidth: .infinity, alignment: .center) // Center the title
+                        
                         VolumeControl(label: "Master Volume", volume: $masterVolume)
                         VolumeControl(label: "Metronome Volume", volume: $metronomeVolume)
                         VolumeControl(label: "Sound FX Volume", volume: $soundFXVolume)
@@ -44,10 +49,17 @@ struct SettingsView: View {
                     .font(Font.custom("Gazpacho", size: 20).weight(.black))
                     .foregroundColor(.black)
                     .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.25), radius: 4, y: 4)
+                    .frame(width: 350) // Set the width of the white rectangle
+                    
+                    Spacer() // Spacer below the white square
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .navigationBarHidden(true)
+            .navigationBarTitle("Settings", displayMode: .inline)
+            .navigationBarHidden(true) // Hide the default navigation bar
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
