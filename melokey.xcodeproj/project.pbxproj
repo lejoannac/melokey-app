@@ -19,6 +19,7 @@
 		1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629CEE32C751FD500AF4EBE /* FontStyles.swift */; };
 		1629CEE82C76562D00AF4EBE /* March Clean.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1629CEE72C76562D00AF4EBE /* March Clean.ttf */; };
 		1629CEEA2C7702B400AF4EBE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1629CEE92C7702B400AF4EBE /* SettingsView.swift */; };
+		16C21CA92C80EEE600C374AA /* MyProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C21CA82C80EEE600C374AA /* MyProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1629CEE32C751FD500AF4EBE /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
 		1629CEE72C76562D00AF4EBE /* March Clean.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "March Clean.ttf"; sourceTree = "<group>"; };
 		1629CEE92C7702B400AF4EBE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		16C21CA82C80EEE600C374AA /* MyProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				161F47FD2C51A0D8007D6794 /* melokeyApp.swift */,
 				161F47FF2C51A0D8007D6794 /* ContentView.swift */,
 				1629CEE92C7702B400AF4EBE /* SettingsView.swift */,
+				16C21CA82C80EEE600C374AA /* MyProjectView.swift */,
 				161F48012C51A0DB007D6794 /* Assets.xcassets */,
 				161F48032C51A0DB007D6794 /* Preview Content */,
 				1629CEE32C751FD500AF4EBE /* FontStyles.swift */,
@@ -288,6 +291,7 @@
 				161F48002C51A0D8007D6794 /* ContentView.swift in Sources */,
 				1629CEEA2C7702B400AF4EBE /* SettingsView.swift in Sources */,
 				161F47FE2C51A0D8007D6794 /* melokeyApp.swift in Sources */,
+				16C21CA92C80EEE600C374AA /* MyProjectView.swift in Sources */,
 				1629CEE42C751FD500AF4EBE /* FontStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
